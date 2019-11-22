@@ -34,5 +34,11 @@ func main() {
 	mux.Handle("/despedirse", messageHFCustom("<h1>Chao amigos</h1>"))
 
 	log.Println("Ejecutando server en http://localhost:8080")
+	log.Println(http.Client{
+                Transport: http.RoundTripper(),
+                CheckRedirect: nil,
+                Jar:           nil,
+                Timeout:       0,
+        })
 	log.Println(http.ListenAndServe(":8080", mux))
 }
