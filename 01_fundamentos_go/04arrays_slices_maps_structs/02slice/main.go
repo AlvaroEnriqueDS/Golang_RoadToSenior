@@ -9,10 +9,10 @@ func main() {
 	// 3. Capacidad
 
 	//ASI SE CREAN LOS SLICE
-		// var nombres []string
+	// var nombres []string
 
-		// make (tipo de dato del slice, tamaño inicial, capacidad inicial)
-		// nombres := make([]string, 0)
+	// make (tipo de dato del slice, tamaño inicial, capacidad inicial)
+	// nombres := make([]string, 0)
 
 	nombres := []string{
 		"Alvaro",
@@ -39,6 +39,13 @@ func main() {
 	// con : puedes dividir por partes un slice y puedes meterlo dentro de otro
 	// x = append(x[:2], x[:4]...)
 	//añadirle append
-	//eliminar algoritmos...
+	//eliminar se usa (...) algoritmos...
+
 	//slice multibidimensionales
+	et := []string{"uno", "dos", "tres"}
+	fmt.Println(et)
+
+	vp := [][]string{et, nombres}
+	fmt.Println(vp)
+	fmt.Println(vp[1][2])
 }

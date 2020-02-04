@@ -16,12 +16,12 @@ func main() {
 	//SCAN PIDE QUE INGRESES UIN VALOR
 	fmt.Scan(&h)
 	fmt.Println("Digitaste", h)
-	time.Sleep(time.Second*10)
+	time.Sleep(time.Second * 10)
 }
 
 func MostrarNumeros() {
 	//for clasico
-	for i := 1; i<=10; i++ {
+	for i := 1; i <= 10; i++ {
 		fmt.Println(i)
 		//ESTE PAQUETE "TIME" Y AL FUNCION "SLEEP"
 		//esto nos solicita que opcion tiene para detenerse

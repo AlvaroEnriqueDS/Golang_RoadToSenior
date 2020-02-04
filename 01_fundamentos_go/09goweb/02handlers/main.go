@@ -1,10 +1,11 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
 	"log"
+	"net/http"
 )
+
 //un handler es una interface que contiene un metodo que recibe como parametro
 //un response writer(devolver informacion) y tambien recibe un request (solicitud del usuario)
 type messageHandlerPrueba struct {

@@ -41,19 +41,19 @@ func main() {
 	//se tiene que evaluar
 
 	/*
-	switch a := 36; a {
-	case 5:
-		fmt.Println("Estás entre semana")
-	default:
-		fmt.Println("No es un día válido")
-	}
+		switch a := 36; a {
+		case 5:
+			fmt.Println("Estás entre semana")
+		default:
+			fmt.Println("No es un día válido")
+		}
 	*/
 
 	//EN ESTE CASO ESTOY DECLARANDO LA VARIABLE SWITCH Y EVALUANDO EN CADA CASO
 	switch a := 7; {
 	case a >= 0 && a <= 5:
 		fmt.Println("Estás entre semana")
-	case a >=6 && a <= 7:
+	case a >= 6 && a <= 7:
 		fmt.Println("Ests en fin de semana :)")
 	default:
 		fmt.Println("No es un día válido")
@@ -61,12 +61,12 @@ func main() {
 
 	// OOOOOOOOOOOOOO
 	/*
-	a := 7
-	switch{
-	case a == 7:
-		fmt.Println("Este si es el numero")
-	default:
-		fmt.Println("Este no es el numero")
-	}
-	 */
+		a := 7
+		switch{
+		case a == 7:
+			fmt.Println("Este si es el numero")
+		default:
+			fmt.Println("Este no es el numero")
+		}
+	*/
 }

@@ -9,7 +9,7 @@ package main
 import "fmt"
 
 //la funcion main es la que se ejecuta solo en el paquete main
-func main()  {
+func main() {
 	//La convención es que el nombre del paquete es el mismo que el último elemento de su ruta.
 	//en este caso importamos "fmt" y usamos el paquete con ese nombre
 	fmt.Print("HELLO WORLD")

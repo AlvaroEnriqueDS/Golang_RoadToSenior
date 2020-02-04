@@ -1,13 +1,13 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
 	"log"
+	"net/http"
 )
 
 //esta firma es para el handlerfunc
-func messageHandlerFunc(w http.ResponseWriter, r *http.Request)  {
+func messageHandlerFunc(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "<h1>Hola este es un handlerfunc</h1>")
 }
 
@@ -23,7 +23,6 @@ func messageHFCustom(message string) http.Handler {
 	)
 }
 
-
 func main() {
 	//multiplexor
 	mux := http.NewServeMux()
@@ -35,10 +34,10 @@ func main() {
 
 	log.Println("Ejecutando server en http://localhost:8080")
 	log.Println(http.Client{
-                Transport: http.RoundTripper(),
-                CheckRedirect: nil,
-                Jar:           nil,
-                Timeout:       0,
-        })
+		Transport:     http.RoundTripper(),
+		CheckRedirect: nil,
+		Jar:           nil,
+		Timeout:       0,
+	})
 	log.Println(http.ListenAndServe(":8080", mux))
 }

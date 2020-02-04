@@ -8,7 +8,6 @@ func main() {
 	division(3, 0)
 }
 
-
 func division(dividendo, divisor int) {
 	//DEFER ENTRA A LA COLA DE ESPERA
 	defer fmt.Println("Esto se ejecutará pase lo que pase")

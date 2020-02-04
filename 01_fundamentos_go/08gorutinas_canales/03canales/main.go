@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"time"
 )
+
 //LOS CANALES PERMITE COMUNICAR ENTRE SI A LAS GO RUTINAS
 func main() {
 	bodegaOrigen := []string{"php", "javascript", "html", "css", "java", "bases de datos", "git"}
@@ -13,7 +14,6 @@ func main() {
 	//ESTE CANAL SE USA CHAN (CANAL) Y EL TIPO
 	fotocopiadora := make(chan string)
 	fotocopiado := make(chan string)
-
 
 	go func() {
 		for _, libro := range bodegaOrigen {
@@ -54,7 +54,7 @@ func main() {
 		}
 	}
 	//ESTO ES SOLO PARA LA PRUEBA DONDE NOS ASEGURAMOS QUE TEMRINA EL PRIMER FOR INFINITO
-	time.Sleep(time.Second*5)
+	time.Sleep(time.Second * 5)
 }
 
 /////////////////////////////////////7
@@ -97,4 +97,4 @@ func main () {
 	ch2 <- 3
 	fmt.Println(<-ch2)
 }
- */
+*/

@@ -8,7 +8,7 @@ func main() {
 
 func f() {
 	defer func() { //CON ESTO LE DICES A LA FUNCON DEFER QUE SE AUTOEJECUTE
-					//PARA QUE AVELUE Y RECUPERE EL PANIC PARA QUE SIGA EL PROGRAMA
+		//PARA QUE AVELUE Y RECUPERE EL PANIC PARA QUE SIGA EL PROGRAMA
 		if r := recover(); r != nil {
 			fmt.Printf("%T\n", r)
 			fmt.Println("Recuperado en f:", r)

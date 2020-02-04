@@ -29,6 +29,6 @@ func main() {
 	fmt.Println("El tamaño del arreglo es de:", size)
 	fmt.Println(nombres)
 
- 	// fmt.Println(nombres[inicio:final(excluyente)])
+	// fmt.Println(nombres[inicio:final(excluyente)])
 	// fmt.Println(nombres[1:2])
 }

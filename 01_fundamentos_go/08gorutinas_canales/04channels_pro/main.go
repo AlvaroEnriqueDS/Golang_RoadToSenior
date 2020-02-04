@@ -1,10 +1,10 @@
 package main
 
-import"fmt"
-import"time"
+import "fmt"
+import "time"
 
 func ping(ball chan<- int, action chan<- string) {
-	ball <-1
+	ball <- 1
 	action <- "Player ping"
 }
 
@@ -15,7 +15,7 @@ func pong(ball chan<- int, action chan<- string) {
 
 func referee(action <-chan string) {
 	for {
-		fmt.Println("Action: ", <- action)
+		fmt.Println("Action: ", <-action)
 	}
 }
 
@@ -26,7 +26,7 @@ func pingpong() {
 	go ping(ball, action)
 
 	for {
-		value := <- ball
+		value := <-ball
 		switch value {
 		case 1:
 			go pong(ball, action)
@@ -36,7 +36,7 @@ func pingpong() {
 	}
 }
 
-func main () {
+func main() {
 	go pingpong()
-	time.Sleep(1 * time.Second);
+	time.Sleep(1 * time.Second)
 }

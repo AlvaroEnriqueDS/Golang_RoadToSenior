@@ -8,11 +8,11 @@ import (
 func main() {
 	//asi se crea uin servidor para una web estatica servida desde go
 	/*
-	//RUTA DE DONDE SERVIRSE
-	http.Handle("/", http.FileServer(http.Dir("public")))
-	log.Println("Ejecutando server en http://localhost:8080")
-	//ESTE LE DICE POR QUE TARJETA Y PUERTO VA A SERVIRSE
-	log.Println(http.ListenAndServe(":8085", nil))
+		//RUTA DE DONDE SERVIRSE
+		http.Handle("/", http.FileServer(http.Dir("public")))
+		log.Println("Ejecutando server en http://localhost:8080")
+		//ESTE LE DICE POR QUE TARJETA Y PUERTO VA A SERVIRSE
+		log.Println(http.ListenAndServe(":8085", nil))
 	*/
 
 	//UN MULTIPLEXOR ES PARA MEJORAR LA EFICIENCIA DE MI SERVIDOR
@@ -26,7 +26,6 @@ func main() {
 	log.Println(http.ListenAndServe(":8086", mux))
 
 }
-
 
 /*
 package main
@@ -47,4 +46,4 @@ funcmain() {
 	})
 	http.ListenAndServe(":8000", nil)
 }
- */
+*/

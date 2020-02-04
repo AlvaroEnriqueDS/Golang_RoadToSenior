@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	//constante de tipo String sin necesidad de declararla
-	const name  = "s"
+	const name = "s"
 	fmt.Println(name)
 
 	//tipos de declaracion
@@ -21,7 +21,7 @@ func main(){
 	//esto le da un formato es decir el %s le estoy pasando una variavle al final
 	fmt.Printf("hola %s cómo estás %d? \n ", n, a)
 	//esto te permite saber qué tipo de dato es
-	fmt.Printf("c es de tipo: %T \n",c)
+	fmt.Printf("c es de tipo: %T \n", c)
 
 	//VALOR CERO
 	var nombre string
@@ -30,10 +30,10 @@ func main(){
 	fmt.Println(nombre, numero, entiendes)
 
 }
+
 //HAY 2 TIPOS DE COMENTARIOS EN GO
 /*
 	en bloque para comentar muchas lineas a la vez (comentar codigo, metodos , etc)
 */
 
 //comentarios en linea, se utilizan para documentar el código(optimizado)
-

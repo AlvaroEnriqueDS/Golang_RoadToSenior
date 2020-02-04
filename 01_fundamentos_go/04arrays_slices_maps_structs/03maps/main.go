@@ -32,11 +32,11 @@ func main() {
 
 	//EVALUAMOS SI UNA POSICION EXISTE EN EL MAPA MEDIANTE UN IF
 	/*
-		if idioma, ok := idiomas["pt"]; ok {
-			fmt.Println("La posición pt sí existe y vale", idioma)
-		} else {
-			fmt.Println("La posición pt NO existe")
-		}
+				if idioma, ok := idiomas["pt"]; ok {
+		        		fmt.Println("La posición pt sí existe y vale", idioma)
+		        	} else {
+					fmt.Println("La posición pt NO existe")
+				}
 	*/
 
 	numeros := map[uint16]string{

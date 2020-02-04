@@ -5,7 +5,7 @@ import (
 	"strings"
 )
 
-func main()  {
+func main() {
 	//strings
 	text := "HELLO! MY NAME IS ALVARO, IAM FROM PeRuVian, I LIVE IN LIMA. HELLO!"
 

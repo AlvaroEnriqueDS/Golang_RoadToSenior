@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main()  {
+func main() {
 	//condicionales en if es
 	// or - ||
 	// and - &&
@@ -12,7 +12,7 @@ func main()  {
 	//se peude asignar variables así
 	if isValid, nombre := true, "alvaro"; isValid && nombre == "alvaro" {
 		fmt.Println("esto es correcto")
-		fmt.Printf("%T %s",isValid, nombre)
+		fmt.Printf("%T %s", isValid, nombre)
 
 	}
 	fmt.Println("\nEl programa termino")

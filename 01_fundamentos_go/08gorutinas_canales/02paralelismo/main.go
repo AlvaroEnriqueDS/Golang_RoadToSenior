@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"sync"
 	"runtime"
+	"sync"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 	for _, v := range numbers {
 		fmt.Println("////")
 		//GO RUTINA CON FUNCION ANONIMA
-		go func(a uint32){
+		go func(a uint32) {
 			//esto quita las rutinas
 			defer wg.Done()
 			fmt.Println(a, EsPrimo(a))

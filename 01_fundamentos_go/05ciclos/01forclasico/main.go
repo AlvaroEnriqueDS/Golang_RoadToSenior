@@ -5,11 +5,11 @@ import "fmt"
 func main() {
 	//el for es:
 	//sentancia de inicio
-		//i := 0;
+	//i := 0;
 	//la expresion de ocndicion
-		// i < 5;
+	// i < 5;
 	//instruccion postejecucion
-		// i++
+	// i++
 	/*
 		for i := 0; i < 5; i++ {
 			fmt.Println(i)
@@ -37,7 +37,6 @@ func main() {
 			fmt.Println(i)
 		}
 	*/
-
 
 	//hacemos el ejercicio de llenar un array bidimensional
 	// var matriz [3][3]

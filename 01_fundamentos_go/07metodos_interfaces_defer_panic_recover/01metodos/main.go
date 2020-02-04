@@ -5,7 +5,7 @@ import "fmt"
 //Esta es uan estructura o clase
 type Persona struct {
 	nombre string
-	edad int8
+	edad   int8
 }
 
 //NO ES NECESARIO CREAR LA ESTRUCTURA PARA ASIGNARLE UN METODO

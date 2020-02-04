@@ -5,8 +5,8 @@ import (
 
 	//go get -u github.com/jinzhu/gorm
 	//go get -u github.com/lib/pq
-	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/postgres"
 )
 
 // Producto contiene los datos de un artículo
@@ -37,12 +37,12 @@ func main() {
 
 	*/
 	/*
-	var p Producto
-	db.First(&p, 2)
-	fmt.Println("Precio del producto consultado:", p.Precio)
+		var p Producto
+		db.First(&p, 2)
+		fmt.Println("Precio del producto consultado:", p.Precio)
 
-	p.Precio = 4500
-	db.Save(&p)
-	fmt.Println("El nuevo precio del producto es", p.Precio)
+		p.Precio = 4500
+		db.Save(&p)
+		fmt.Println("El nuevo precio del producto es", p.Precio)
 	*/
 }
