@@ -32,6 +32,9 @@ func (p *Persona) asignarEdad(i int8) {
 
 func main() {
 	var persona Persona
+	persona = Persona{
+                nombre: "Alvaro",
+        }
 	// var numero Numero
 	persona.saludar()
 	// numero.presentarse()
