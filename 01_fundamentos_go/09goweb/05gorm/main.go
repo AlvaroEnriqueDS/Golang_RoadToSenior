@@ -25,12 +25,12 @@ func main() {
 	fmt.Println("Se conectó a la base de datos")
 
 	/*
-		db.CreateTable(&Producto{})
+		01_db.CreateTable(&Producto{})
 		fmt.Println("Se creó la tabla productos en la base de datos")
 	*/
 
 	/*
-		db.Create(&Producto{
+		01_db.Create(&Producto{
 			CodigoBarras: "otroCodigoDebarras",
 			Precio:       5000,
 		})
@@ -38,11 +38,11 @@ func main() {
 	*/
 	/*
 		var p Producto
-		db.First(&p, 2)
+		01_db.First(&p, 2)
 		fmt.Println("Precio del producto consultado:", p.Precio)
 
 		p.Precio = 4500
-		db.Save(&p)
+		01_db.Save(&p)
 		fmt.Println("El nuevo precio del producto es", p.Precio)
 	*/
 }
