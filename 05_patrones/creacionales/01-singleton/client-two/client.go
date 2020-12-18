@@ -1,6 +1,6 @@
 package client_two
 
-import "github/alvaroenriqueds/patrones-go/creacionales/01-singleton/singleton"
+import "github/alvaroenriqueds/Golang_RoadToSenior/05_patrones/creacionales/01-singleton/singleton"
 
 func IncrementAge()  {
 	p := singleton.GetInstance()
