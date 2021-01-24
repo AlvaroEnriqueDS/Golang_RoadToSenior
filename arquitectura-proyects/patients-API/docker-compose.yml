@@ -1,0 +1,37 @@
+version: "3.3"
+services:
+  db:
+    image: "postgres:10.5"
+    restart:
+      unless-stopped
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db/data:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
+    environment:
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "project"
+    networks: # Networks to join
+      - local
+    tty:
+      true
+  app:
+    depends_on:
+      - db
+    build:
+      context: ""
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080" # Forward the exposed port 8080 on the container to port 8080 on the host machine
+    restart:
+      unless-stopped
+    links:
+      - "db"
+    networks: # Networks to join
+      - local
+    tty:
+      true
+networks:
+  local:
+    driver: bridge
